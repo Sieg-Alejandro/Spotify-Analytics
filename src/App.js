@@ -8,7 +8,6 @@ import logo from "./logo.svg";
 import disc from "./disc.svg";
 import GenreChart from './components/GenreChart'
 
-
 const time_periods = {
   medium_term: "Over the past 6 months",
   short_term: "Over the past 4 weeks",
@@ -145,10 +144,6 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          {/* {this.state.token && !this.state.no_data
-            ?<img src={disc} className="App-logo" alt="disc" />
-            : null
-          }    */}
           {!this.state.token && (
             <a
               className="btn btn--loginApp-link"
